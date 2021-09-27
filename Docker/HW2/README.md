@@ -13,8 +13,12 @@
 ![Execution on GCP](cloud_run.PNG)
 
 ## (5 pts) Print for my Dockerfile contents and the source code
-Not sure what this means...
+Files are located in this folder. I used HelloWorld.java to print Hello World
 
 ## (5 pts) Screenshot for Jupyter
 ![Jupyter without console](jupyter.PNG)
 ![Jupyter with console](jupyter_with_console.PNG)
+
+## (3 pts) Extra Credit - Kubernetes
+![Kubernetes 1](kubernetes.PNG)
+![Kubernetes 2](kubernetes2.PNG)
