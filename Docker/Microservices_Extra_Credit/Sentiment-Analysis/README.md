@@ -43,7 +43,9 @@ Steps:
 ## (5 pts) List of URLs for all of your Docker Hub images (Make sure they are publicly available). 
 
 [lch43/sentiment-analysis-logic](https://hub.docker.com/r/lch43/sentiment-analysis-logic)
+
 [lch43/sentiment-analysis-frontend](https://hub.docker.com/r/lch43/sentiment-analysis-frontend)
+
 [lch43/sentiment-analysis-webapp](https://hub.docker.com/r/lch43/sentiment-analysis-webapp)
 
 ## (5 pts) Video recording of code walkthrough and demo.
