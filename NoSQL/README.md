@@ -4,7 +4,7 @@
 [https://github.com/lch43/CS1660](https://github.com/lch43/CS1660)
 
 ## NoSQL folder:
-[https://github.com/lch43/CS1660/tree/main/Docker](https://github.com/lch43/CS1660/tree/main/NoSQL)
+[https://github.com/lch43/CS1660/tree/main/NoSQL](https://github.com/lch43/CS1660/tree/main/NoSQL)
 
 ## Code files:
 [hw3.py](https://github.com/lch43/CS1660/blob/main/NoSQL/hw3.py)
