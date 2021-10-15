@@ -7,7 +7,7 @@
 [https://github.com/lch43/CS1660/tree/main/Docker](https://github.com/lch43/CS1660/tree/main/NoSQL)
 
 ## Code files:
-hw3.py
+[hw3.py](https://github.com/lch43/CS1660/blob/main/NoSQL/hw3.py)
 
 ## Screenshot of query I used on my local machine to pull the data from my Dynamo DB:
 ![Query code](query_code.PNG)
