@@ -74,7 +74,7 @@ with open('experiments.csv', 'r') as csvfile:
         s3.Object(bucket_name, item[4]).put(Body=body )
         md = s3.Object(bucket_name, item[4]).Acl().put(ACL='public-read')
 
-        url = " https://s3-us-west-2.amazonaws.com/"+bucket_name+"/"+item[4]
+        url = "https://s3-"+region+".amazonaws.com/"+bucket_name+"/"+item[4]
         metadata_item = {'PartitionKey': 'Experiments', 'RowKey':item[4], 'Id': item[0], 'Temp': item[1],
             'Conductivity' : item[2], 'Concentration' : item[3], 'url':url}
         try:
