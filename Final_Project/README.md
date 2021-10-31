@@ -3,13 +3,23 @@
 # Project Checkpoint:
 ## Source code for the client-side application (terminal or GUI-based).
 It is a React App located in:
+
 /Client/React/front-end/
+
 Most specifically:
+
 /Client/React/front-end/src/components
+
 /Client/React/front-end/src/App.js
 
+---
+
 ## Source code for the Dockerfile used to run the client-side application.
+(With help from)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+
 /Client/Dockerfile
+
+---
 
 ## In your ReadMe file, list the steps you will use to connect to GCP.
 I am still waiting on a response from the professor on how I could go about doing this, but I have multiple ideas that could potentially work.
@@ -21,18 +31,26 @@ I am still waiting on a response from the professor on how I could go about doin
    3. Create the server from part 2 on the GCP cluster to possibly get better access to what is going on.
    4. Use some APIs that GCP offers to run MapReduce and retrieve the data. I saw some tutorials that mentioned something about BigTable, so I feel I could possibly use something like that.
 
+---
+
 ## In your ReadMe file, list all the build/run commands you used to run the client-side application
 To build:
+
 In /Client/React/front-end/ run ``` docker build -t client-app . ```
 
 To run:
+
 (Dockerfile docker run command made with help from (this article)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+
 Either:
+
 From the docker image: ``` docker pull lch43/cs1660-project-front-end ```
+
 Run: ``` docker run --rm -it -p 8080:80 lch43/cs1660-project-front-end ```
 
 Or:
     After building from the above step:
+
     Run: ``` docker run --rm -it -p 8080:80 client-app ```
 
 ---
@@ -48,6 +66,9 @@ Or:
 
 ## Extra-credit: building Graphical User Interface for this application: +20% of the total project grade:
 (Dockerfile docker run command made with help from (this article)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+
 From the docker image: ``` docker pull lch43/cs1660-project-front-end ```
+
 Run: ``` docker run --rm -it -p 8080:80 lch43/cs1660-project-front-end ```
-React code is in: React/front-end/
+
+React code is in: /Client/React/front-end/
