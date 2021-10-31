@@ -4,20 +4,20 @@
 ## Source code for the client-side application (terminal or GUI-based).
 It is a React App located in:
 
-/Client/React/front-end/
+[/Client/React/front-end/](https://github.com/lch43/CS1660/tree/main/Final_Project/Client/React/front-end)
 
 Most specifically I worked mainly in:
 
-/Client/React/front-end/src/components
+[/Client/React/front-end/src/components](https://github.com/lch43/CS1660/tree/main/Final_Project/Client/React/front-end/src/components)
 
-/Client/React/front-end/src/App.js
+[/Client/React/front-end/src/App.js](https://github.com/lch43/CS1660/blob/main/Final_Project/Client/React/front-end/src/App.js)
 
 ---
 
 ## Source code for the Dockerfile used to run the client-side application.
-[With help from](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/)
+[With help from https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/)
 
-/Client/Dockerfile
+[/Client/React/front-end/Dockerfile](https://github.com/lch43/CS1660/blob/main/Final_Project/Client/React/front-end/Dockerfile)
 
 ```
 FROM node:10 AS app_builder
@@ -49,7 +49,7 @@ I am still waiting on a response from the professor on how I could go about doin
 ## In your ReadMe file, list all the build/run commands you used to run the client-side application
 To build:
 
-In /Client/React/front-end/ run ``` docker build -t client-app . ```
+In [/Client/React/front-end/](https://github.com/lch43/CS1660/tree/main/Final_Project/Client/React/front-end) run ``` docker build -t client-app . ```
 
 To run:
 
@@ -69,6 +69,7 @@ Run: ``` docker run --rm -it -p 8080:80 client-app ```
 
 # Grading:
 ## First Java Application Implementation and Execution on Docker: 40% of the total project grade:
+React app in [/Client/React/front-end/](https://github.com/lch43/CS1660/tree/main/Final_Project/Client/React/front-end)
 
 ## Docker to Local (or GCP) Cluster Communication: 20% of the total project grade:
 
@@ -83,4 +84,4 @@ From the docker image: ``` docker pull lch43/cs1660-project-front-end ```
 
 Run: ``` docker run --rm -it -p 8080:80 lch43/cs1660-project-front-end ```
 
-React code is in: /Client/React/front-end/
+React code is in: [/Client/React/front-end/](https://github.com/lch43/CS1660/tree/main/Final_Project/Client/React/front-end)
