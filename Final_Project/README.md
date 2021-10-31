@@ -1,4 +1,4 @@
-#CS 1660 Project Option-II
+# CS 1660 Project Option-II
 
 # Project Checkpoint:
 ## Source code for the client-side application (terminal or GUI-based).
