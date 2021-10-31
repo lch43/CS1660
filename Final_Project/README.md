@@ -15,7 +15,7 @@ Most specifically I worked mainly in:
 ---
 
 ## Source code for the Dockerfile used to run the client-side application.
-(With help from)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+[With help from](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/)
 
 /Client/Dockerfile
 
@@ -53,7 +53,7 @@ In /Client/React/front-end/ run ``` docker build -t client-app . ```
 
 To run:
 
-(Dockerfile docker run command made with help from (this article)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+(Dockerfile docker run command made with help from [this article](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/))
 
 Either:
 
@@ -77,7 +77,7 @@ Run: ``` docker run --rm -it -p 8080:80 client-app ```
 ## Term Search and Top-N Search (including execution time): 20% of the total project grade:
 
 ## Extra-credit: building Graphical User Interface for this application: +20% of the total project grade:
-(Dockerfile docker run command made with help from (this article)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
+(Dockerfile docker run command made with help from [this article](https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/))
 
 From the docker image: ``` docker pull lch43/cs1660-project-front-end ```
 
