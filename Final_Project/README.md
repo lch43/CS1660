@@ -6,7 +6,7 @@ It is a React App located in:
 
 /Client/React/front-end/
 
-Most specifically:
+Most specifically I worked mainly in:
 
 /Client/React/front-end/src/components
 
@@ -18,6 +18,17 @@ Most specifically:
 (With help from)[https://typeofnan.dev/how-to-serve-a-react-app-with-nginx-in-docker/])
 
 /Client/Dockerfile
+
+``` FROM node:10 AS app_builder
+WORKDIR /app
+COPY . .
+RUN yarn install && yarn build
+
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
+RUN rm -rf ./*
+COPY --from=app_builder /app/build .
+ENTRYPOINT ["nginx", "-g", "daemon off;"] ```
 
 ---
 
@@ -48,10 +59,9 @@ From the docker image: ``` docker pull lch43/cs1660-project-front-end ```
 
 Run: ``` docker run --rm -it -p 8080:80 lch43/cs1660-project-front-end ```
 
-Or:
-    After building from the above step:
+Or after building from the above step:
 
-    Run: ``` docker run --rm -it -p 8080:80 client-app ```
+Run: ``` docker run --rm -it -p 8080:80 client-app ```
 
 ---
 
