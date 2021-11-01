@@ -35,14 +35,16 @@ ENTRYPOINT ["nginx", "-g", "daemon off;"]
 ---
 
 ## In your ReadMe file, list the steps you will use to connect to GCP.
-I am still waiting on a response from the professor on how I could go about doing this, but I have multiple ideas that could potentially work.
+I am still working out which way would be the best approach, but here are my plans:
 1. Create the authentication JSON from https://cloud.google.com/docs/authentication/getting-started#cloud-console
 2. Add the GOOGLE_APPLICATION_CREDENTIALS environment variable to the docker container.
-3. This is where my ideas could vary:
+3. Add the mapreduce java jar or class files to the bucket to be able to run MapReduce when called.
+4. This is where my ideas could vary:
    1. Use REST api commands if available from GCP to run the commands needed in the HDSF directly from the React app.
    2. Create a local server docker container that the React App container would connect to (that server container would have the GOOGLE_APPLICATION_CREDENTIALS environment variable) and use that to create processes that can potentially run gcloud to connect to the HDFS
    3. Create the server from part 2 on the GCP cluster to possibly get better access to what is going on.
    4. Use some APIs that GCP offers to run MapReduce and retrieve the data. I saw some tutorials that mentioned something about BigTable, so I feel I could possibly use something like that.
+   5. Use the jar files on the GCP bucket to also act as an intermediary between Hadoop and the client
 
 ---
 
