@@ -67,6 +67,8 @@ Or after building from the above step:
 
 Run: ``` docker run --rm -it -p 8080:80 client-app ```
 
+Open the localhost on the binded port. For this example you can open your internet browser such as Google Chrome and enter ``` http://localhost:8080/ ``` into the address bar.
+
 ---
 
 # Grading:
