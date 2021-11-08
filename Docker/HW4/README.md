@@ -1,10 +1,10 @@
 # Copy of Your mapper.py code (or equivalent in another programming language) (25% of total grade)
 
-MaxTemperatureMapper class in WordCountHW4.java
+MaxTemperatureMapper class in [WordCountHW4.java](https://github.com/lch43/CS1660/blob/main/Docker/HW4/WordCountHW4.java)
 
 # Copy of Your reducer.py code (or equivalent in another programming language) (25% of total grade)
 
-MaxTemperatureReducer class in WordCountHW4.java
+MaxTemperatureReducer class in [WordCountHW4.java](https://github.com/lch43/CS1660/blob/main/Docker/HW4/WordCountHW4.java)
 
 # Screenshot of the execution of Hadoop MapReduce Job in the terminal (25% of total grade)
 
@@ -13,4 +13,4 @@ MaxTemperatureReducer class in WordCountHW4.java
 
 # Copy of your output file (after merging) containing the results (25% of total grade)
 
-collectedResults.txt
+[collectedResults.txt](https://github.com/lch43/CS1660/blob/main/Docker/HW4/collectedResults.txt)
