@@ -14,3 +14,6 @@ MaxTemperatureReducer class in [WordCountHW4.java](https://github.com/lch43/CS16
 # Copy of your output file (after merging) containing the results (25% of total grade)
 
 [collectedResults.txt](https://github.com/lch43/CS1660/blob/main/Docker/HW4/collectedResults.txt)
+
+# (+20%) Build GUI to upload the two data files from your local machine to GCP bucket automatically without having 
+[Youtube link](https://www.youtube.com/watch?v=O0o7bvHfZbA)

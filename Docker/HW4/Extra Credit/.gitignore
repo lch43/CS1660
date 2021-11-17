@@ -1,0 +1,6 @@
+gcloud-keys.json
+/node_modules
+/uploads/*
+/.dockerignore
+/Dockerfile
+/package-lock.json
