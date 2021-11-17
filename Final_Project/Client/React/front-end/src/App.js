@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from 'axios';
 import './App.css';
 import ChooseAction from "./components/ChooseAction";
 import ConstructInvertedButton from "./components/ConstructInvertedButton";
@@ -7,6 +8,10 @@ import LoadEngine from "./components/LoadEngine";
 import RequestSearchTerm from "./components/RequestSearchTerm";
 import RequestTopNValue from "./components/RequestTopNValue";
 import SearchTermResults from "./components/SearchTermResults";
+
+//Change this to where you are hosting the backend server
+const backendURL = "http://localhost:8238";
+
 
 function App() {
   const [ files, setFiles ] = useState({});
@@ -46,6 +51,30 @@ function App() {
         setAppState(3);
       }
     }
+    else if(requestType === "Upload"){
+      if (files.length > 0){
+
+        //Assisted by https://stackoverflow.com/questions/58381990/react-axios-multiple-files-upload
+        const formData = new FormData();
+        for (let filePos = 0; filePos<files.length; filePos++){
+          formData.append("fileArray", files[filePos]);
+        }
+        // files.forEach(file=>{
+        //   formData.append("fileArray", file);
+        // });
+
+        axios({
+          method: "POST",
+          url: backendURL + "/uploadFiles",
+          data: formData,
+          headers: {
+            "Content-Type": "multipart/form-data"
+          }
+        }).then(function (response) {
+          console.log(response);
+        })
+      }
+    }
 
     setRequestHandled(true);
   }
@@ -70,7 +99,7 @@ function App() {
           }))
         }
         
-        <ConstructInvertedButton setAppState={setAppState} fileList={files} />
+        <ConstructInvertedButton setAppState={setAppState} fileList={files} setRequestType={setRequestType} setRequestHandled={setRequestHandled} />
       </div>
     );
   }
