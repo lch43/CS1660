@@ -1,3 +1,5 @@
 /.dockerignore
 /Dockerfile
 /Server
+/React*
+/React/front-end
