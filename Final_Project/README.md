@@ -144,3 +144,6 @@ Search results generated via MapReduce job done using [/CloudPrep/WordCount.java
 
 ## Extra-credit: building Graphical User Interface for this application: +20% of the total project grade:
 The client express app provides a graphical user interface for the application. It is accessed via web browser.
+
+## Video Walkthrough
+[Youtube link](https://youtu.be/6-ZP4D1ly90)

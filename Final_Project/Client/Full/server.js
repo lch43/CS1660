@@ -111,7 +111,8 @@ server.get('/index', function (req, res) {
   var word = req.query.word;
   var ind = inverted[word.toLowerCase()];
   if (ind === undefined){
-    res.send("<h1>Search results for "+word+"</h1><p>Search executed in "+((new Date().getTime())-now)+" ms</p><p>Term not found.</p>"+'<form action="/requestIndex" method="get"><input type="submit" value="Return to index search"></form>')
+    res.send("<h1>Search results for "+word+"</h1><p>Search executed in "+((process.hrtime()[1])-now)+" ns</p><p>Term not found.</p>"+'<form action="/requestIndex" method="get"><input type="submit" value="Return to index search"></form>')
+    return;
   }
   var data = ind.data;
   for (let i=0; i<data.length; i++){
